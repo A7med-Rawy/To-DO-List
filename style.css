@@ -13,6 +13,9 @@ body{
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
+    background: rgba(151, 75, 155, 1.0);
+    background: linear-gradient(135deg, rgba(151, 75, 155, 1.0), rgba(110, 226, 239, 1.0));
+    height: 100vh;
 }
 .container{
     margin:20px auto;
@@ -25,10 +28,12 @@ body{
 form {
     display: flex;
     justify-content: space-between;
-    background: #eee;
+    gap: 10px;
+    background: #F7C4FA;
     padding: 20px;
     border-radius: 6px;
     width: 600px;
+    border: 1px solid #F7C4FA;
 }
 
 form .input{
@@ -43,7 +48,7 @@ form .input:focus{
 }
 
 form .add{
-    background: red;
+    background: #6EE2EF;
     border-radius: 6px;
     border: 0;
     color: white;
@@ -54,7 +59,7 @@ form .add{
 
 .tasks{
     width: 600px;
-    background: #eee;
+    background: #F7C4FA;
     margin-top: 30px;
     padding: 20px;
     border-radius: 6px;
@@ -69,7 +74,7 @@ form .add{
     align-items: center;
     transition: 0.3s;
     cursor: pointer;
-    border: 1px solid #eee;
+    border: 1px solid #F7C4FA;
     font-weight: bold;
     font-size: 20px;
 }
@@ -85,9 +90,17 @@ form .add{
 .tasks div span{
     font-weight: bold;
     font-size: 10px;
-    background-color: red;
+    background-color: rgb(119, 13, 13);
     color: white;
     padding: 5px 10px;
     border-radius: 4px;
     cursor: pointer;
+}
+@media (max-width: 776px) {
+    .container{
+        width: 90%;
+    }
+    .tasks div span{
+        font-size: 8px;
+    }
 }
